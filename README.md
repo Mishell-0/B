@@ -52,6 +52,103 @@ El análisis de los datos se realizará utilizando diversas herramientas y méto
 ### Interpretación de Resultados
 Cada análisis será complementado con una interpretación detallada de los resultados, extrayendo conclusiones relevantes sobre las características y distribución de los vehículos en el mercado estadounidense. Se explorarán implicaciones prácticas de los hallazgos y áreas de investigación futura.
 
+### Funciones 
+
+#### Eleccion del DataSet y declaracion de variables pafra selecionar las columnas
+```javascript
+#columna Price
+data <- read.csv(file.choose())
+precio <- data$price
+anio <- data$year
+kilometraje <- data$mileage
+lote <- data$lot
+```
+#### Funciones para los rangos
+
+```javascript
+rango1 <- function(){
+rangoValores <-precio[1:10]
+}
+
+rango2 <- function(){
+  rangoValores2 <-precio[10:20]
+}
+
+rango3 <- function(){
+  rangoValores3 <-precio[30:40]
+}
+
+```
+#### Función para Tabla de Frecuencia
+
+```javascript
+tablaFrecuenciaPrecio <- function(vector){
+  listax <- hist(vector,plot=FALSE)
+  tf <- table.freq(listax) 
+}
+
+```
+
+#### Función para Histograma
+
+```javascript
+
+histograma <- function (vector){
+  hist(vector, 
+       main = "Histograma",xlab = "Valores",ylab = "Frecuencia",  col = "lightblue",border = "black")
+}
+
+```
+
+#### Función para Poligono de Frecuencia
+
+```javascript
+
+poligonoFrecuencia <- function(vector){
+  polygon(vector, col = "blue", border = "purple")
+}
+
+```
+
+#### Función para Diagrama de Pastel
+
+```javascript
+
+graficoPastelPrecio <- function(vector){
+  pie(vector)
+}
+
+```
+
+### Funciones Para medidas de Tendencia 
+
+#### Media 
+
+```javascript
+media <- function(vector){
+  return(mean(vector))
+}
+```
+#### Mediana
+
+```javascript
+
+mediana <- function(vector){
+  x <- sort(vector)
+  return(median(x))
+}
+
+```
+#### Moda
+
+```javascript
+
+moda <- function(vector){
+  return(as.numeric(names(which.max(table(x)))))
+}
+
+```
+
 ### Conclusiones
 
 
