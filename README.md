@@ -52,6 +52,198 @@ El análisis de los datos se realizará utilizando diversas herramientas y méto
 ### Interpretación de Resultados
 Cada análisis será complementado con una interpretación detallada de los resultados, extrayendo conclusiones relevantes sobre las características y distribución de los vehículos en el mercado estadounidense. Se explorarán implicaciones prácticas de los hallazgos y áreas de investigación futura.
 
+### Funciones 
+
+#### Eleccion del DataSet y declaracion de variables pafra selecionar las columnas
+```javascript
+#columna Price
+data <- read.csv(file.choose())
+precio <- data$price
+anio <- data$year
+kilometraje <- data$mileage
+lote <- data$lot
+```
+#### Funciones para los rangos
+
+```javascript
+rango1 <- function(){
+rangoValores <-precio[1:10]
+}
+
+rango2 <- function(){
+  rangoValores2 <-precio[10:20]
+}
+
+rango3 <- function(){
+  rangoValores3 <-precio[30:40]
+}
+
+```
+#### Función para Tabla de Frecuencia
+
+```javascript
+tablaFrecuenciaPrecio <- function(vector){
+  listax <- hist(vector,plot=FALSE)
+  tf <- table.freq(listax) 
+}
+
+```
+
+#### Función para Histograma
+
+```javascript
+
+histograma <- function (vector){
+  hist(vector, 
+       main = "Histograma",xlab = "Valores",ylab = "Frecuencia",  col = "lightblue",border = "black")
+}
+
+```
+
+#### Función para Poligono de Frecuencia
+
+```javascript
+
+poligonoFrecuencia <- function(vector){
+  polygon(vector, col = "blue", border = "purple")
+}
+
+```
+
+#### Función para Diagrama de Pastel
+
+```javascript
+
+graficoPastelPrecio <- function(vector){
+  pie(vector)
+}
+
+```
+
+### Funciones para Medidas de Tendencia 
+
+#### Media 
+
+```javascript
+media <- function(vector){
+  return(mean(vector))
+}
+```
+#### Mediana
+
+```javascript
+
+mediana <- function(vector){
+  x <- sort(vector)
+  return(median(x))
+}
+
+```
+#### Moda
+
+```javascript
+
+moda <- function(vector){
+  return(as.numeric(names(which.max(table(x)))))
+}
+
+```
+
+### Funciones para Medidas de Dispersión 
+
+#### Varianza
+
+```javascript
+
+varianza <- function(vector){
+  return(var(vector, na.rm = FALSE))
+}
+
+```
+
+#### Desviación Estandar
+
+```javascript
+
+desviacionEstandar <- function(vector){
+  return(sd(vector)) 
+}
+
+```
+
+#### Coeficiente de Variación 
+
+```javascript
+
+coeficienteVariacion <- function(vector){
+  return(cv(vector)) 
+}
+
+```
+
+
+### Funciones para Medidas de Posición 
+
+#### Cuartiles
+
+```javascript
+
+cuartiles <- function(vector){
+  q <- quantile(vector, probs = c(0.25, 0.5, 0.75))
+  return(q)
+}
+
+```
+
+#### Deciles
+
+```javascript
+
+deciles <- function(vector){
+  d <- quantile(vector, probs = seq(0.1, 0.9, by=0.1))
+  return(d)
+}
+
+```
+
+#### Percentiles 
+
+```javascript
+
+percentiles <- function(vector){
+  p <- quantile(vector, probs = seq(0.01, 0.99, by=0.01))
+  return(p)
+}
+
+```
+
+### Funciones para Diagramas
+
+#### Diagrama de Caja
+
+```javascript
+
+diagramaCaja <- function (vector){
+  boxplot(vector, col ="lightpink", border = "black", horizontal = TRUE, main = "Diagrama de Caja",
+          xlab="Valores")
+}
+
+```
+
+#### Diagrama de Pareto
+
+```javascript
+
+diagramaPareto <- function(vector){
+paste("El tamaño de la muestra es: ",length(vector))
+names(vector) <- c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J")
+pareto.chart(vector[1:10], ylab = "Frecuencias", col = heat.colors(length(vector)), cumperc = seq(0, 100, by = 20),
+             ylab2 = "Porcentaje acumulado", main = "Diagrama de Pareto")
+}
+
+```
+
+
 ### Conclusiones
 
 
