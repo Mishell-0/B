@@ -8,7 +8,7 @@
 ### Estudiantes:
 
 - Lizandro Durán
-- Misell Chiles
+- Mishell Chiles
 - Brandon Naula
 - Lorena Guerrero
 ----
