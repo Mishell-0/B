@@ -255,9 +255,18 @@ pareto.chart(vector[1:10], ylab = "Frecuencias", col = heat.colors(length(vector
 
 
 
+### Recomendaciones
+1.-Dedica tiempo a explorar características avanzadas de RStudio, como la integración con Git, que te permite gestionar versiones y colaborar eficientemente en proyectos.
+
+2.-Aprovecha la funcionalidad de configuración de proyectos en RStudio. Organizar tu trabajo en proyectos facilita la gestión de directorios, paquetes y entornos de trabajo de manera más eficiente.
+
+3.-Personaliza los paneles de RStudio según tus necesidades. Aprende a utilizar y organizar los paneles para acceder rápidamente a herramientas esenciales y optimizar tu flujo de trabajo.
+
 
 ### Conclusiones
+1.-La integración de RStudio con Git ofrece una oportunidad valiosa para gestionar versiones y colaborar de manera eficiente en proyectos.
 
+2.-La funcionalidad de configuración de proyectos en RStudio proporciona una forma eficiente de organizar directorios, paquetes y entornos de trabajo.
 
 ### Bibliografia
 - Senani, D. (2022). [USA Cars Dataset](https://www.kaggle.com/datasets/doaaalsenani/usa-cers-dataset). *Kaggle*.
