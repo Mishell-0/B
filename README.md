@@ -22,22 +22,31 @@ Los datos de US Cars fueron extraídos de AUCTION EXPORT.com. Este conjunto de d
 incluía información sobre 28 marcas de vehículos limpios y usados a la venta en EE. UU. Se
 reunieron doce características para cada automóvil en el conjunto de datos.
 
-
-
-
 ### Introducción
 El análisis de datos en el sector automotriz es crucial para entender las tendencias del mercado, las características de los vehículos y el comportamiento de los consumidores. Este proyecto se basa en un dataset que recopila información sobre vehículos limpios y usados en venta en Estados Unidos, con el objetivo de realizar un análisis exploratorio que permita extraer conocimientos relevantes para diversas aplicaciones empresariales.
 
 ### Marco Teórico
 Análisis de Datos en el Sector Automotriz
 El análisis de datos en el sector automotriz ha ganado una importancia creciente en los últimos años debido a la abundancia de datos generados por diversos aspectos de la industria. Desde la producción hasta las ventas y el mantenimiento, los datos juegan un papel crucial en la comprensión de las tendencias del mercado, el rendimiento de los vehículos y las preferencias de los consumidores.
+### Recursos 
 
-### Herramientas y Métodos
+- Computador
+- RStudio Version: 2023.12.1+402
+
 #### R version 4.3.2
 
 Es un entorno de desarrollo integrado (IDE) para el lenguaje de programación R. Permite escribir, depurar y ejecutar código de R de manera eficiente. Es una herramienta muy popular entre los científicos de datos y los analistas estadísticos debido a sus características como la edición de código, la visualización de datos, la integración con git y la generación de informes reproducibles.
 ![Imagen](https://www.arsys.es/blog/file/uploads/2020/10/featured-rstudio-1.jpg)
 
+
+### Bibliotecas Utilizadas
+
+- qcc
+- agricolae
+
+
+
+### Herramientas y Métodos
 El análisis de los datos se realizará utilizando diversas herramientas y métodos estadísticos, que incluyen:
 
 1. Tablas de Frecuencias, Histogramas y Polígonos de Frecuencia: Para visualizar la distribución de las características de los vehículos y detectar patrones o valores atípicos.
@@ -69,23 +78,23 @@ lote <- data$lot
 #### Funciones para los rangos
 
 javascript
-rango1 <- function(){
-rangoValores <-precio[1:10]
+rango1 <- function(vector){
+rangoValores <-vector[1:10]
 }
 
-rango2 <- function(){
-  rangoValores2 <-precio[10:20]
+rango2 <- function(vector){
+  rangoValores2 <-vector[10:20]
 }
 
-rango3 <- function(){
-  rangoValores3 <-precio[30:40]
+rango3 <- function(vector){
+  rangoValores3 <-vector[30:40]
 }
 
 
 #### Función para Tabla de Frecuencia
 
 javascript
-tablaFrecuenciaPrecio <- function(vector){
+tablaFrecuencia <- function(vector){
   listax <- hist(vector,plot=FALSE)
   tf <- table.freq(listax) 
 }
@@ -250,6 +259,10 @@ pareto.chart(vector[1:10], ylab = "Frecuencias", col = heat.colors(length(vector
 ### Conclusiones
 
 
-### Referencias
+### Bibliografia
+- Senani, D. (2022). [USA Cars Dataset](https://www.kaggle.com/datasets/doaaalsenani/usa-cers-dataset). *Kaggle*.
+-  W3Schools. (s.f.). [R Programming Tutorial](https://www.w3schools.com/r/default.asp). *W3Schools*.
+
+
 
 ---
