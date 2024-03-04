@@ -33,7 +33,10 @@ Análisis de Datos en el Sector Automotriz
 El análisis de datos en el sector automotriz ha ganado una importancia creciente en los últimos años debido a la abundancia de datos generados por diversos aspectos de la industria. Desde la producción hasta las ventas y el mantenimiento, los datos juegan un papel crucial en la comprensión de las tendencias del mercado, el rendimiento de los vehículos y las preferencias de los consumidores.
 
 ### Herramientas y Métodos
-![Imagen](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.arsys.es%2Fblog%2Ffile%2Fuploads%2F2020%2F10%2Ffeatured-rstudio-1.jpg&tbnid=7fluBfTLbUYbcM&vet=12ahUKEwiZ982RxdmEAxXBmrAFHUl7BWMQMygSegUIARCYAQ..i&imgrefurl=https%3A%2F%2Fwww.arsys.es%2Fblog%2Frstudio&docid=LhqYQoMfhQ-xSM&w=1215&h=420&q=r%20studio&ved=2ahUKEwiZ982RxdmEAxXBmrAFHUl7BWMQMygSegUIARCYAQ)
+#### R version 4.3.2
+
+Es un entorno de desarrollo integrado (IDE) para el lenguaje de programación R. Permite escribir, depurar y ejecutar código de R de manera eficiente. Es una herramienta muy popular entre los científicos de datos y los analistas estadísticos debido a sus características como la edición de código, la visualización de datos, la integración con git y la generación de informes reproducibles.
+![Imagen](https://www.arsys.es/blog/file/uploads/2020/10/featured-rstudio-1.jpg)
 
 El análisis de los datos se realizará utilizando diversas herramientas y métodos estadísticos, que incluyen:
 
