@@ -33,6 +33,8 @@ Análisis de Datos en el Sector Automotriz
 El análisis de datos en el sector automotriz ha ganado una importancia creciente en los últimos años debido a la abundancia de datos generados por diversos aspectos de la industria. Desde la producción hasta las ventas y el mantenimiento, los datos juegan un papel crucial en la comprensión de las tendencias del mercado, el rendimiento de los vehículos y las preferencias de los consumidores.
 
 ### Herramientas y Métodos
+![Imagen](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.arsys.es%2Fblog%2Ffile%2Fuploads%2F2020%2F10%2Ffeatured-rstudio-1.jpg&tbnid=7fluBfTLbUYbcM&vet=12ahUKEwiZ982RxdmEAxXBmrAFHUl7BWMQMygSegUIARCYAQ..i&imgrefurl=https%3A%2F%2Fwww.arsys.es%2Fblog%2Frstudio&docid=LhqYQoMfhQ-xSM&w=1215&h=420&q=r%20studio&ved=2ahUKEwiZ982RxdmEAxXBmrAFHUl7BWMQMygSegUIARCYAQ)
+
 El análisis de los datos se realizará utilizando diversas herramientas y métodos estadísticos, que incluyen:
 
 1. Tablas de Frecuencias, Histogramas y Polígonos de Frecuencia: Para visualizar la distribución de las características de los vehículos y detectar patrones o valores atípicos.
